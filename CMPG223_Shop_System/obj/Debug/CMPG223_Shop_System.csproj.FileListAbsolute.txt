@@ -1,0 +1,16 @@
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\bin\Debug\CMPG223_Shop_System.exe.config
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\bin\Debug\CMPG223_Shop_System.exe
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\bin\Debug\CMPG223_Shop_System.pdb
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\bin\Debug\Bunifu_UI_v1.52.dll
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.csproj.AssemblyReference.cache
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.Log_In.resources
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.Properties.Resources.resources
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.csproj.GenerateResource.cache
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.csproj.CoreCompileInputs.cache
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.csproj.CopyComplete
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.exe
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.pdb
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.Forms.HomeScreenEmployee.resources
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.Forms.LogInForms.CustomerCreateAccount.resources
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.Forms.LogInForms.CustomerLogIn.resources
+D:\CMPG223-Group-Assignment\CMPG223_Shop_System\obj\Debug\CMPG223_Shop_System.Forms.HomeScreenCustomers.resources
