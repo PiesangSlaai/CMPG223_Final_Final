@@ -144,6 +144,9 @@
     <EmbeddedResource Include="Forms\LogInForms\Log_In.resx">
       <DependentUpon>Log_In.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\testMerge.resx">
+      <DependentUpon>testMerge.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
