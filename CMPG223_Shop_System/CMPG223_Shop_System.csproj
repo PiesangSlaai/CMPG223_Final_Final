@@ -144,8 +144,14 @@
     <EmbeddedResource Include="Forms\LogInForms\Log_In.resx">
       <DependentUpon>Log_In.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maintain_Consoles.resx">
+      <DependentUpon>Maintain_Consoles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Maintain_Developers.resx">
       <DependentUpon>Maintain_Developers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maintain_Games.resx">
+      <DependentUpon>Maintain_Games.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\testMerge.resx">
       <DependentUpon>testMerge.cs</DependentUpon>
