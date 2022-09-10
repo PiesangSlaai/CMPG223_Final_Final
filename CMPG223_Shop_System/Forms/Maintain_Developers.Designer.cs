@@ -32,22 +32,22 @@ namespace CMPG223_Shop_System.Forms
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtDID = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.txtDName = new System.Windows.Forms.TextBox();
             this.txtGame = new System.Windows.Forms.TextBox();
             this.txtConsole = new System.Windows.Forms.TextBox();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.txtDID = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -61,6 +61,7 @@ namespace CMPG223_Shop_System.Forms
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(578, 439);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -85,6 +86,15 @@ namespace CMPG223_Shop_System.Forms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtering";
             // 
+            // txtName
+            // 
+            this.txtName.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtName.Location = new System.Drawing.Point(148, 44);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(145, 20);
+            this.txtName.TabIndex = 1;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -93,14 +103,6 @@ namespace CMPG223_Shop_System.Forms
             this.label2.Size = new System.Drawing.Size(125, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Filter by developer name:";
-            // 
-            // txtName
-            // 
-            this.txtName.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtName.Location = new System.Drawing.Point(148, 44);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(145, 20);
-            this.txtName.TabIndex = 1;
             // 
             // groupBox2
             // 
@@ -114,23 +116,6 @@ namespace CMPG223_Shop_System.Forms
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Deleting";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 43);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Developer ID:";
-            // 
-            // txtID
-            // 
-            this.txtID.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtID.Location = new System.Drawing.Point(97, 43);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(148, 20);
-            this.txtID.TabIndex = 1;
             // 
             // btnDelete
             // 
@@ -147,6 +132,24 @@ namespace CMPG223_Shop_System.Forms
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // txtID
+            // 
+            this.txtID.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtID.Location = new System.Drawing.Point(97, 43);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(148, 20);
+            this.txtID.TabIndex = 1;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 43);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Developer ID:";
             // 
             // groupBox3
             // 
@@ -167,49 +170,22 @@ namespace CMPG223_Shop_System.Forms
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Adding";
             // 
-            // label4
+            // btnAdd
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 38);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Developer ID:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 83);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Console ID:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 124);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Game ID:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 171);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 13);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Developers name:";
-            // 
-            // txtDID
-            // 
-            this.txtDID.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtDID.Location = new System.Drawing.Point(148, 35);
-            this.txtDID.Name = "txtDID";
-            this.txtDID.Size = new System.Drawing.Size(148, 20);
-            this.txtDID.TabIndex = 4;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnAdd.Image = global::CMPG223_Shop_System.Properties.Resources.icons8_arrow_24px;
+            this.btnAdd.Location = new System.Drawing.Point(118, 217);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(127, 40);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtDName
             // 
@@ -235,21 +211,49 @@ namespace CMPG223_Shop_System.Forms
             this.txtConsole.Size = new System.Drawing.Size(148, 20);
             this.txtConsole.TabIndex = 6;
             // 
-            // btnAdd
+            // txtDID
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnAdd.Image = global::CMPG223_Shop_System.Properties.Resources.icons8_arrow_24px;
-            this.btnAdd.Location = new System.Drawing.Point(118, 217);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(127, 40);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdd.UseVisualStyleBackColor = false;
+            this.txtDID.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtDID.Location = new System.Drawing.Point(148, 35);
+            this.txtDID.Name = "txtDID";
+            this.txtDID.Size = new System.Drawing.Size(148, 20);
+            this.txtDID.TabIndex = 4;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 171);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(93, 13);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Developers name:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(18, 124);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Game ID:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 83);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Console ID:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 38);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Developer ID:";
             // 
             // Maintain_Developers
             // 
