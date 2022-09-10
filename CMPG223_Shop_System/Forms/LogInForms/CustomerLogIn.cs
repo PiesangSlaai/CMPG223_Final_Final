@@ -16,5 +16,11 @@ namespace CMPG223_Shop_System.Forms.LogInForms
         {
             InitializeComponent();
         }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            Maintain_Developers myform = new Maintain_Developers();
+            myform.ShowDialog();
+        }
     }
 }

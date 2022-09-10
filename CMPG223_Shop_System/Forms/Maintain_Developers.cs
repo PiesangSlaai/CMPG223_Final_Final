@@ -17,7 +17,7 @@ namespace CMPG223_Shop_System.Forms
         public SqlDataAdapter adapter;
         public DataSet ds;
         public SqlCommand command;
-        public string conn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\source\repos\JK_Pienaar_34227857_Assignment2\JK_Pienaar_34227857_Assignment2\App_Data\Dance.mdf;Integrated Security=True";
+        public string conn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\OneDrive\Desktop\CMPG223_Final_Final\CMPG223_Shop_System\Database1.mdf;Integrated Security = True; Connect Timeout = 30";
 
         //declaring variables
         public int id;
@@ -43,19 +43,19 @@ namespace CMPG223_Shop_System.Forms
                 con.Open();
              
 
-                string sql = @"SELECT * FROM Companies WHERE Developer_Name LIKE '%" + txtName.Text + "%'";
+                string sql = @"SELECT * FROM DeveloperTable WHERE Developer_Name LIKE '%" + txtName.Text + "%'";
                 SqlCommand command = new SqlCommand(sql, con);
 
                    SqlDataAdapter adapter = new SqlDataAdapter();
                 DataSet dataSet = new DataSet();
                 // Filling the dataset
                 adapter.SelectCommand = command;
-                adapter.Fill(dataSet, "Companies");
+                adapter.Fill(dataSet, "DeveloperTable");
 
                 //Adding the data into the data grid
 
                 dataGridView1.DataSource = dataSet;
-                dataGridView1.DataMember = "Companies";
+                dataGridView1.DataMember = "DeveloperTable";
 
                 // Closing the connection to the database
                 con.Close();
@@ -75,7 +75,7 @@ namespace CMPG223_Shop_System.Forms
                 con = new SqlConnection(conn);// creating new connection
                 con.Open();// opening connection
 
-                string sql = @"DELETE FROM Dance WHERE Genre = '" + txtID.Text + "'";
+                string sql = @"DELETE FROM DeveloperTable WHERE Developer_ID = '" + txtID.Text + "'";
                 ds = new DataSet();
                 adapter = new SqlDataAdapter();
 
@@ -85,14 +85,14 @@ namespace CMPG223_Shop_System.Forms
                 adapter.Fill(ds);
 
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = ("Dancers"); 
+                dataGridView1.DataMember = ("DeveloperTable"); 
 
                 con.Close();
 
                 con = new SqlConnection(conn);// creating new connection
                 con.Open();// opening connection
 
-                sql = @"SELECT * FROM Dance";
+                sql = @"SELECT * FROM DeveloperTable";
                 ds = new DataSet();
                 adapter = new SqlDataAdapter();
 
@@ -102,7 +102,7 @@ namespace CMPG223_Shop_System.Forms
                 adapter.Fill(ds);
 
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = ("Dancers"); 
+                dataGridView1.DataMember = ("DeveloperTable"); 
 
                 con.Close();
             }
@@ -127,7 +127,7 @@ namespace CMPG223_Shop_System.Forms
                 con = new SqlConnection(conn);// creating new connection
                 con.Open();// opening connection
 
-                string sql = $"INSERT INTO Dance(BookingID,Name,Surname,Genre)VALUES({id}, '{console}','{game}','{name}')";
+                string sql = $"INSERT INTO DeveloperTable(Developer_ID,Console_ID,Game_ID,Developer_Name)VALUES({id}, '{console}','{game}','{name}')";
 
 
                 command = new SqlCommand(sql, con);
@@ -145,6 +145,44 @@ namespace CMPG223_Shop_System.Forms
                 MessageBox.Show(ex.Message);// display error message
             }
 
+        }
+
+        private void Maintain_Developers_Load(object sender, EventArgs e)
+        {
+            
+            con = new SqlConnection(conn);
+            con.Open();
+            if (con.State == ConnectionState.Open)
+            {
+                MessageBox.Show("Connection Succesful");
+            }
+            else
+            {
+                MessageBox.Show("Connection Failed");
+            }
+            
+            ds = new DataSet();
+
+
+
+            string sql = "Select * from DeveloperTable";
+            SqlCommand command = new SqlCommand(sql, con);
+
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            // Filling the dataset
+            adapter.SelectCommand = command;
+            adapter.Fill(ds, "DeveloperTable");
+
+            //Adding the data into the data grid
+
+            dataGridView1.DataSource = ds;
+            dataGridView1.DataMember = "DeveloperTable";
+            con.Close();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
     }
