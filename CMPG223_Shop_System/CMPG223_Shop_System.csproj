@@ -113,6 +113,12 @@
     <Compile Include="Forms\Maintain_Games.Designer.cs">
       <DependentUpon>Maintain_Games.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Maintain_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Maintain_Orders.Designer.cs">
+      <DependentUpon>Maintain_Orders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Request_To_Purchase_Consoles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Maintain_Games.resx">
       <DependentUpon>Maintain_Games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Maintain_Orders.resx">
+      <DependentUpon>Maintain_Orders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\testMerge.resx">
       <DependentUpon>testMerge.cs</DependentUpon>
