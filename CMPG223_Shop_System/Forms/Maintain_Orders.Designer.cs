@@ -34,6 +34,7 @@ namespace CMPG223_Shop_System.Forms
             this.txt_Order = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.gp_Delete = new System.Windows.Forms.GroupBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.lbl_OrderID = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.gp_FilterBy = new System.Windows.Forms.GroupBox();
@@ -46,7 +47,6 @@ namespace CMPG223_Shop_System.Forms
             this.lbl_GameID = new System.Windows.Forms.Label();
             this.lblOrderID = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.gp_Delete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.gp_FilterBy.SuspendLayout();
@@ -99,6 +99,23 @@ namespace CMPG223_Shop_System.Forms
             this.gp_Delete.TabIndex = 5;
             this.gp_Delete.TabStop = false;
             this.gp_Delete.Text = "Delete";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnDelete.Image = global::CMPG223_Shop_System.Properties.Resources.icons8_arrow_24px;
+            this.btnDelete.Location = new System.Drawing.Point(170, 145);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(300, 68);
+            this.btnDelete.TabIndex = 5;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // lbl_OrderID
             // 
@@ -211,23 +228,6 @@ namespace CMPG223_Shop_System.Forms
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(209, 33);
             this.textBox2.TabIndex = 3;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnDelete.Image = global::CMPG223_Shop_System.Properties.Resources.icons8_arrow_24px;
-            this.btnDelete.Location = new System.Drawing.Point(170, 145);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(300, 68);
-            this.btnDelete.TabIndex = 5;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // Maintain_Orders
             // 
