@@ -217,12 +217,12 @@
     <None Include="Icons\icons8_account_48px_1.png" />
     <None Include="Icons\icons8_account_60px.png" />
     <None Include="Icons\icons8_login_32px.png" />
-    <Content Include="DBMaintainOrders.mdf">
+    <Content Include="DB_Maintain_Orders.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DBMaintainOrders_log.ldf">
+    <Content Include="DB_Maintain_Orders_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DBMaintainOrders.mdf</DependentUpon>
+      <DependentUpon>DB_Maintain_Orders.mdf</DependentUpon>
     </Content>
     <Content Include="Icons\icons8_login_512px_1.png" />
     <None Include="Icons\icons8_login_512px_2.png" />
