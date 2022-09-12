@@ -21,5 +21,10 @@ namespace CMPG223_Shop_System.Forms.LogInForms
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

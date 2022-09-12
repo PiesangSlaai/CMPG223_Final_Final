@@ -146,6 +146,11 @@ namespace CMPG223_Shop_System.Forms
             }
 
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
     
