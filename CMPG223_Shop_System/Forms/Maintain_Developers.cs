@@ -146,6 +146,11 @@ namespace CMPG223_Shop_System.Forms
             }
 
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
     }
     
